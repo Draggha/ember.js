@@ -41,7 +41,15 @@ export {
   set,
   trySet
 } from './property_set';
-export { objectAt } from './array';
+export {
+  objectAt,
+  replace,
+  replaceInNativeArray,
+  addArrayObserver,
+  removeArrayObserver,
+  arrayContentWillChange,
+  arrayContentDidChange
+} from './array';
 export {
   eachProxyFor,
   eachProxyArrayWillChange,
@@ -124,7 +132,6 @@ export {
   tagFor,
   markObjectAsDirty
 } from './tags';
-export { default as replace } from './replace';
 export {
   default as runInTransaction,
   didRender,
@@ -135,9 +142,3 @@ export {
   setProxy
 } from './is_proxy';
 export { default as descriptor } from './descriptor';
-export {
-  addArrayObserver,
-  removeArrayObserver,
-  arrayContentWillChange,
-  arrayContentDidChange
-} from './array';
